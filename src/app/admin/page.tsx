@@ -42,13 +42,13 @@ export default function AdminPage() {
     }
 
     // Verificar se o usuário é admin
-    const { data: profile } = await supabase
-      .from('user_profiles')
+    const { data: user } = await supabase
+      .from('users')
       .select('is_admin')
       .eq('id', session.user.id)
       .single();
 
-    if (profile?.is_admin) {
+    if (user?.is_admin) {
       setIsAdmin(true);
     } else {
       router.push('/');
