@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PodStore - Os Melhores Pods do Mercado",
-  description: "Loja online de pods com os melhores sabores e qualidade premium",
+  title: "Criado com a Lasy",
+  description: "Projeto criado com Lasy AI",
 };
 
 export default function RootLayout({
